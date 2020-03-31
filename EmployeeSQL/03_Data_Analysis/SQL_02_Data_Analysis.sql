@@ -16,6 +16,8 @@ JOIN
 	tbl_salaries
 ON 
 	tbl_employees.emp_number = tbl_salaries.emp_number
+ORDER BY
+	tbl_employees.emp_number
 ;
 
 --=====================================================================
@@ -59,6 +61,8 @@ FROM
 	tbl_employees
 WHERE
 	tbl_employees.emp_hire_date BETWEEN '1986-01-01' AND '1986-12-31'
+ORDER BY
+	tbl_employees.emp_hire_date
 ;
 
 --=====================================================================
@@ -105,6 +109,8 @@ JOIN tbl_department_managers ON
 	tbl_departments.dept_number = tbl_department_managers.dept_number
 JOIN tbl_employees ON 
 	tbl_employees.emp_number = tbl_department_managers.emp_number
+ORDER BY
+	tbl_departments.dept_number
 ;
 
 --=====================================================================
@@ -154,6 +160,8 @@ JOIN tbl_departments ON
 	tbl_departments.dept_number = tbl_department_employees.dept_number
 JOIN tbl_employees ON 
 	tbl_employees.emp_number = tbl_department_employees.emp_number
+ORDER BY
+	tbl_department_employees.emp_number
 ;
 
 --=====================================================================
@@ -201,6 +209,8 @@ JOIN tbl_departments ON
 	tbl_departments.dept_number = tbl_department_employees.dept_number
 JOIN tbl_employees ON 
 	tbl_employees.emp_number = tbl_department_employees.emp_number
+ORDER BY
+	tbl_department_employees.emp_number
 ;
 
 --=====================================================================
@@ -239,6 +249,7 @@ JOIN tbl_employees ON
 --=====================================================================
 
 SELECT 
+	tbl_employees.emp_number,
 	tbl_employees.emp_last_name, 
 	tbl_employees.emp_first_name 
 FROM 
@@ -247,6 +258,8 @@ WHERE
 	tbl_employees.emp_first_name = 'Hercules' 
 AND
 	tbl_employees.emp_last_name LIKE 'B%'
+ORDER BY
+	tbl_employees.emp_last_name
 ;
 
 
@@ -276,6 +289,8 @@ JOIN tbl_employees ON
 	tbl_employees.emp_number = tbl_department_employees.emp_number
 WHERE
 	tbl_departments.dept_name = 'Sales'
+ORDER BY
+	tbl_employees.emp_last_name
 ;
 
 --=====================================================================
@@ -328,6 +343,8 @@ WHERE
 	tbl_departments.dept_name = 'Sales' 
 OR
 	tbl_departments.dept_name = 'Development' 
+ORDER BY
+	tbl_employees.emp_last_name
 ;
 
 --=====================================================================
@@ -378,7 +395,7 @@ FROM
 GROUP BY
 	tbl_employees.emp_last_name
 ORDER BY
-	count(tbl_employees.emp_last_name) DESC
+	"FREQUENCY_COUNT" DESC
 ;
 
 
