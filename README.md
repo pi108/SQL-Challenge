@@ -56,9 +56,9 @@ In the Jupyter Notebook analysis file (“JPYNB_01_Data_Analysis”) we discover
 1.	The Average Salary for the Employee Title = "Staff" is higher than that of the Employee Title = "Manager". This is unintuitive, because the Average Salary for the Employee Title = "Manager" should be higher than that of the Employee Title = "Staff".
 2.	The Average Salary for the Employee Title = "Staff" is almost identical to that of the Employee Title = "Senior Staff". This is unintuitive, because the Average Salary for the Employee Title = "Senior Staff" should be much higher than that of the Employee Title = "Staff".
 3.	The Average Salary for the Employee Title = "Engineer" is higher than that of the Employee Title = "Senior Engineer". This is unintuitive, because the Average Salary for the Employee Title = "Senior Engineer" should be much higher than that of the Employee Title = "Engineer".
-## Unintuitive & Unrealistic Proportions with the Category of Engineers: 
+## Unintuitive / Unrealistic Proportions within the Category of Engineers: 
 1.	There are only 15,128 assistant engineers, but there are 115,003 engineers. This is unintuitive, because typically you should have more assistant engineers (subordinates) than engineers (superiors). 
-## Salary Histograms that look almost identical in shape across multiple Employee Titles:
+## Unintuitive / Unrealistic Salary Histograms that look almost identical in shape across multiple Employee Titles:
 In the Jupyter Notebook analysis file (“JPYNB_01_Data_Analysis”) we also discovered  that:
 1.	The Salary Histogram looks almost identical in shape for the Employee Titles Assistant Engineer, Engineer, and Senior Engineer. This is very suspicious and highly unrealistic.    
 2.	The Salary Histogram looks almost identical in shape for the Employee Titles Staff and Senior Staff. This is very suspicious and highly unrealistic.    
