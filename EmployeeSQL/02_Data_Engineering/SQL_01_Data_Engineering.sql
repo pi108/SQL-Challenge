@@ -3,7 +3,7 @@
 --======================================================================
 -- Create Table # 1: tbl_departments
 -- The column "dept_number" has been designated as the Primary Key.
--- This column contaisn only unique values. 
+-- This column contains only unique values. 
 --======================================================================
 --======================================================================
 
@@ -59,7 +59,7 @@ FROM
 --======================================================================
 -- Create Table # 2: tbl_employees
 -- The column "emp_number" has been designated as the Primary Key.
--- This column contaisn only unique values. 
+-- This column contains only unique values. 
 --======================================================================
 --======================================================================
 
@@ -120,7 +120,8 @@ FROM
 -- The column "emp_number" has been designated as the Foreign Key.
 -- This column references the column "emp_number" in the table "tbl_employees". 
 -- The "ON DELETE CASCADE" clause has been added for referential integrity.
--- This Clause ensures that if a record in the parent table "tbl_employees"is deleted, 
+-- This Clause ensures that if:
+-- a record in the parent table "tbl_employees" is deleted, 
 -- then the corresponding records in this table will automatically be deleted. 
 --======================================================================
 --======================================================================
@@ -183,8 +184,9 @@ FROM
 -- The column "emp_number" has been designated as the Foreign Key.
 -- This column references the column "emp_number" in the table "tbl_employees". 
 -- The "ON DELETE CASCADE" clause has been added for referential integrity.
--- This Clause ensures that if a record in the parent table "tbl_employees"is deleted, 
--- then the corresponding records in this table will automatically be deleted. 
+-- This Clause ensures that if:
+-- a record in the parent table "tbl_employees" is deleted, 
+-- then the corresponding records in this table will automatically be deleted.
 --======================================================================
 --======================================================================
 
