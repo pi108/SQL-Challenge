@@ -51,7 +51,7 @@ Based on our analysis, we conclude that the dataset provided to us is a fictitio
 In the SQL Analysis file (“SQL_01_Analysis”), we discovered that for employee number 499942:
 1. The first name was "April", and the last_name was "Foolsday". 
 2. The hire_date is 1997-02-10, but the salary from_date is 1998-03-28, implying that this employee was not paid any salary for more than a year after the employee’s hire date. 
-## Unintuitive & Unrealistic Average Salary Data: 
+## Unintuitive / Unrealistic Average Salary Data: 
 In the Jupyter Notebook analysis file (“JPYNB_01_Data_Analysis”) we discovered  that:
 1.	The Average Salary for the Employee Title = "Staff" is higher than that of the Employee Title = "Manager". This is unintuitive, because the Average Salary for the Employee Title = "Manager" should be higher than that of the Employee Title = "Staff".
 2.	The Average Salary for the Employee Title = "Staff" is almost identical to that of the Employee Title = "Senior Staff". This is unintuitive, because the Average Salary for the Employee Title = "Senior Staff" should be much higher than that of the Employee Title = "Staff".
