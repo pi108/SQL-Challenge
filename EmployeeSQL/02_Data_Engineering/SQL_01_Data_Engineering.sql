@@ -2,6 +2,8 @@
 --======================================================================
 --======================================================================
 -- Create Table # 1: tbl_departments
+-- The column "dept_number" has been designated as the Primary Key.
+-- This column contaisn only unique values. 
 --======================================================================
 --======================================================================
 
@@ -56,6 +58,8 @@ FROM
 --======================================================================
 --======================================================================
 -- Create Table # 2: tbl_employees
+-- The column "emp_number" has been designated as the Primary Key.
+-- This column contaisn only unique values. 
 --======================================================================
 --======================================================================
 
@@ -113,6 +117,11 @@ FROM
 --======================================================================
 --======================================================================
 -- Create Table # 3: tbl_salaries
+-- The column "emp_number" has been designated as the Foreign Key.
+-- This column references the column "emp_number" in the table "tbl_employees". 
+-- The "ON DELETE CASCADE" clause has been added for referential integrity.
+-- This Clause ensures that if a record in the parent table "tbl_employees"is deleted, 
+-- then the corresponding records in this table will automatically be deleted. 
 --======================================================================
 --======================================================================
 
@@ -171,6 +180,11 @@ FROM
 --======================================================================
 --======================================================================
 -- Create Table # 4: tbl_titles
+-- The column "emp_number" has been designated as the Foreign Key.
+-- This column references the column "emp_number" in the table "tbl_employees". 
+-- The "ON DELETE CASCADE" clause has been added for referential integrity.
+-- This Clause ensures that if a record in the parent table "tbl_employees"is deleted, 
+-- then the corresponding records in this table will automatically be deleted. 
 --======================================================================
 --======================================================================
 
@@ -229,6 +243,13 @@ FROM
 --======================================================================
 --======================================================================
 -- Create Table # 5: tbl_department_employees
+-- The columns "emp_number" and "dept_number" have been designated as the Foreign Keys.
+-- The column "emp_number" references the column "emp_number" in the table "tbl_employees". 
+-- The column "dept_number" references the column "dept_number" in the table "tbl_departments".
+-- The "ON DELETE CASCADE" clause has been added for referential integrity.
+-- This Clause ensures that if:
+-- a record in either of the parent tables "tbl_employees" or "tbl_departments" is deleted, 
+-- then the corresponding records in this table will automatically be deleted. 
 --======================================================================
 --======================================================================
 
@@ -290,6 +311,13 @@ FROM
 --======================================================================
 --======================================================================
 -- Create Table # 6: tbl_department_managers
+-- The columns "emp_number" and "dept_number" have been designated as the Foreign Keys.
+-- The column "emp_number" references the column "emp_number" in the table "tbl_employees". 
+-- The column "dept_number" references the column "dept_number" in the table "tbl_departments".
+-- The "ON DELETE CASCADE" clause has been added for referential integrity.
+-- This Clause ensures that if:
+-- a record in either of the parent tables "tbl_employees" or "tbl_departments" is deleted, 
+-- then the corresponding records in this table will automatically be deleted. 
 --======================================================================
 --======================================================================
 
